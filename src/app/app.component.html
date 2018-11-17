@@ -1,0 +1,173 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" (click)="actualView = 'home';">uv project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'home';" href="#">Datos personales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'homework';" href="#">Tareas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'diplomas';" href="#">diplomas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Sistemas';" href="#">Sistemas de num</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Binario';" href="#">Codigo Binario</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Boleana';" href="#">Algebra Boleana</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Circuitos';" href="#">Circuitos MSI y LSI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Decodificadores';" href="#">Decodificadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Multiplexores';" href="#">Multiplexores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Contadores';" href="#">Contadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Sumadores';" href="#">Sumadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'ALU';" href="#">ALU</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div *ngIf="actualView == 'home'">
+      <h1>home</h1>
+    </div>
+    <div *ngIf="actualView == 'diplomas'">
+      <h1>Informacion: </h1>
+    </div>
+    <div *ngIf="actualView == 'Sistemas'">
+      <h1>Informacion: </h1>
+      <pre>
+        Los sistemas numéricos de codificación son técnicas utilizadas para representar textos, flujos de datos o archivos mediante números enteros, utilizando los conceptos de la teoría de números. En la actualidad, tanto la teoría de números como los sistemas numéricos de codificación tienen gran auge en el mundo de la criptografía y en la seguridad computacional.
+
+En este capítulo estudiaremos el sistema decimal, el binario, el octal y hexadecimal, y las conversiones de un sistema a otro.
+      </pre>
+
+
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/4kenXkQBIEw' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Binario'">
+      <h1>Videos de youtube</h1>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/lqFaPj6BYi4' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Boleana'">
+      <h1>Informacion: </h1>
+      <pre>
+        ¿QUÉ ES EL ÁLGEBRA BOOLEANA?
+        Es una rama especial del álgebra que se usa principalmente en electrónica digital. El álgebra booleana fue inventada en el año 1854 por el matemático inglés George Boole.
+
+        El álgebra de Boole es un método para simplificar los circuitos lógicos (o a veces llamados circuitos de conmutación lógica) en electrónica digital.
+
+        Por lo tanto, también se llama como "Cambio de álgebra". Podemos representar el funcionamiento de los circuitos lógicos utilizando números, siguiendo algunas reglas, que son bien conocidas como "Leyes del álgebra de Boole".
+
+         Compuertas lógicas
+        También podemos hacer los cálculos y las operaciones lógicas de los circuitos aún más rápido siguiendo algunos teoremas, que se conocen como "Teoremas del álgebra de Boole". Una función booleana es una función que representa la relación entre la entrada y la salida de un circuito lógico.
+
+        La lógica booleana solo permite dos estados del circuito, como True y False. Estos dos estados están representados por 1 y 0, donde 1 representa el estado "Verdadero" y 0 representa el estado "Falso".
+
+        Lo más importante para recordar en el álgebra de Boole es que es muy diferente al álgebra matemática regular y sus métodos. Antes de aprender sobre el álgebra de Boole, vamos a contar  un poco sobre la historia del álgebra de Boole y su invención y desarrollo.
+      </pre>
+      <h3>Vides de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/p58C7OWe3Xk' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Circuitos'">
+      <h1>Princing</h1>
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/OaEPmqXesik' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Decodificadores'">
+      <h1>Decodificadores: </h1>
+      <h3>Videos de youtube</h3>
+    <iframe width="560" height="315" src='https://www.youtube.com/embed/Q887j1snu8A' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Multiplexores'">
+      <h1>Informacion: </h1>
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/gTcU-FrRioM' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Contadores'">
+      <h1>Informacion: </h1>
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/1Roajj6yfMs' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Sumadores'">
+      <h1>Informacion: </h1>
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/HiCbt2EIBqU' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'ALU'">
+      <h1>Informacion: </h1>
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/YygPpWjNWts' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'homework';">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Tarea 1
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              primer video: pelea apple microsoft :una de las grandes peleas originada por la tecnologia, queriendo liderar en los estados unidos. nos demuestra que grandes potencias tambien tiene errores y aqui lo unico que importaba era tener
+              un buen conocimiento y las ganas de crecer. ya que microsoft empezo desdecero con la habilidad del conocimieno y saber como manejar su astucia y apostar todo por sus sueños.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tarea 2
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              en la conferencia se hablo sobre la in fluencia que tiene las marcas; google , amazon apple y facebook , en nuestra vida en lo que consiste basicamente cada marca o aplicacion no obstante se menciona qu google y amazon pueden
+              otorgar prestamos teles como si fuesen bancos lo que pueden significar que si otorgan prestamos los bancos pueden desaparecer. Tambien se menciono sobre la evolucion de las utilizacion de las redes sociales y la comunicacion, todo
+              en exceso es malo pero gracias a la evolucion de las tecnologias que estan en nuestra mano podemos hacer ciertas cosas mas rapido incluso en nuestros trabajos o negocios. </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tarea 3
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              pelicula, codigo enigma, nos enseña que los conocimientos no son como tratar a la gente o tener un cuerpo o rostro perfecto, no es necesario un cuerpo guapo o feo, ya que eso no define tu inteligencia. sigue tus sueños sin importar
+              lo que otros digan o por muy al que te traten. si tu sabes que eso puede funcionar no declines, si al principio no era como esperabas vuelvelo hacer y veras que tendras otros conocimiento de como no tienes que hacerlo porque tus
+              fracasos son aprendizajes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
