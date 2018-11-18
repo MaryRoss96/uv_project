@@ -47,10 +47,13 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <div *ngIf="actualView == 'home'">
-      <h1>home</h1>
+
+      <p>Nombre: Maria del Rosario Cortes Hernandez</p>
+      <p>Grupo: 102-S</p>
+      <p>Carrera: LSCA</p>
     </div>
     <div *ngIf="actualView == 'diplomas'">
-      <h1>Informacion: </h1>
+      <img src="../assets/diploma.jpg" alt="">
     </div>
     <div *ngIf="actualView == 'Sistemas'">
       <h1>Informacion: </h1>
@@ -59,12 +62,18 @@
 
 En este capítulo estudiaremos el sistema decimal, el binario, el octal y hexadecimal, y las conversiones de un sistema a otro.
       </pre>
-
-
+      <h3>IMG</h3>
+      <img src="https://www.unadmexico.mx/sitios/aplicaciones-107/LITE_36/_Un_151_OperacionesAritmeticasBasicas/escenas/imgs/sistemas.jpg" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/4kenXkQBIEw' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Binario'">
+      <h1>Informacion: </h1>
+      <pre>
+        El código binario es el sistema numérico usado para la representación de textos, o procesadores de instrucciones de computadora, utilizando el sistema binario (sistema numérico de dos dígitos, o bit: el "0" /cerrado/ y el "1" /abierto/). En informática y telecomunicaciones, el código binario se utiliza con variados métodos de codificación de datos, tales como cadenas de caracteres, o cadenas de bits. Estos métodos pueden ser de ancho fijo o ancho variable. Por ejemplo en el caso de un CD, las señales que reflejarán el "láser" que rebotará en el CD y será recepcionado por un sensor de distinta forma indicando así, si es un cero o un uno.
+      </pre>
+      <h3>IMG</h3>
+      <img src="https://static.vix.com/es/sites/default/files/styles/large/public/btg/codigo_binario_2.jpg?itok=paY6MBRL" alt="">
       <h1>Videos de youtube</h1>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/lqFaPj6BYi4' frameborder="0" allowfullscreen></iframe>
     </div>
@@ -85,36 +94,80 @@ En este capítulo estudiaremos el sistema decimal, el binario, el octal y hexade
 
         Lo más importante para recordar en el álgebra de Boole es que es muy diferente al álgebra matemática regular y sus métodos. Antes de aprender sobre el álgebra de Boole, vamos a contar  un poco sobre la historia del álgebra de Boole y su invención y desarrollo.
       </pre>
+      <h3>IMG</h3>
+      <img src="https://sites.google.com/site/area1sexto/_/rsrc/1411760334775/home/cibernetica/identidades-basicas-del-algebra-booleana/Screen%20shot%202014-09-26%20at%202.38.10%20PM.png" alt="">
       <h3>Vides de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/p58C7OWe3Xk' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Circuitos'">
-      <h1>Princing</h1>
+      <h1>Informacion: </h1>
+      <pre>
+        La rapidez del desarrollo tecnológico ha dado lugar a que se puedan integrar simultáneamente en un mismo dispositivo un número determinado de puertas entre sí, que realizan una función concreta, así a principio de los años sesenta llegó la aparición del circuito integrado. A partir de entonces se han ido mejorando las técnicas de fabricación de forma espectacular, hasta llegar a la actualidad, donde es posible encontrar en una superficie de algo más de 1 cm cuadrado cientos de miles de puertas lógicas. Dependiendo del número de elementos puertas que se encuentren integrados en el chip se dice que ese circuito está dentro de una determinada escala de integración.
+      </pre>
+      <h3>IMG</h3>
+      <img src="http://image.slidesharecdn.com/circuitos-integrados-1227375444654175-8/95/circuitos-integrados-7-728.jpg?cb=1227368304" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/OaEPmqXesik' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Decodificadores'">
-      <h1>Decodificadores: </h1>
+      <h1>Informacion:  </h1>
+      <pre>
+        Un decodificador o descodificador es un circuito combinacional, cuya función es inversa a la del codificador, es decir, convierte un código binario de entrada (natural, BCD, etc.) de N bits de entrada y M líneas de salida (N puede ser cualquier entero y M es un entero menor o igual a 2N), tales que cada línea de salida será activada para una sola de las combinaciones posibles de entrada. Normalmente, estos circuitos suelen encontrarse como decodificador / demultiplexor. Esto es debido a que un demultiplexor puede comportarse como un decodificador.
+
+Si por ejemplo se tiene un decodificador de 2 entradas con 22=4 salidas, su funcionamiento sería el que se indica en la siguiente tabla, donde se ha considerado que las salidas se activen con un "uno" lógico
+      </pre>
+      <h3>IMG: </h3>
+      <img src="http://azul2.bnct.ipn.mx/clogicos/codificadores_decodificadores/graficos(.gif)/UNID2_37.gif" alt="">
       <h3>Videos de youtube</h3>
     <iframe width="560" height="315" src='https://www.youtube.com/embed/Q887j1snu8A' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Multiplexores'">
       <h1>Informacion: </h1>
+      <pre>
+        Los multiplexores son circuitos combinacionales con varias entradas y una única salida de datos. Están dotados de entradas de control capaces de seleccionar una, y solo una, de las entradas de datos para permitir su transmisión desde la entrada seleccionada hacia dicha salida.
+
+En el campo de la electrónica el multiplexor se utiliza como dispositivo que puede recibir varias entradas y transmitirlas por un medio de transmisión compartido. Para ello lo que hace es dividir el medio de transmisión en múltiples canales, para que varios nodos puedan comunicarse al mismo tiempo.
+
+Una señal que está multiplexada debe demultiplexarse en el otro extremo.
+      </pre>
+      <h3>IMG: </h3>
+      <img src="http://e-ducativa.catedu.es/44700165/aula/archivos/repositorio/4750/4923/html/mux8.gif" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/gTcU-FrRioM' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Contadores'">
       <h1>Informacion: </h1>
+      <pre>
+        Un contador es una variable cuyo valor se incrementa o decrementa en una cantidad constante, cada vez que se produce un determinado suceso, acción o iteración. Los contadores se utilizan con la finalidad de contar
+sucesos, acciones o iteraciones internas en un bucle, proceso, subrutina o donde se requiera cuantificar; deben ser inicializados antes del ciclo o proceso, e incrementados o decrementados dentro del ciclo.
+La inicialización consiste en asignarle al contador un valor inicial, es decir el número desde el cual necesitamos se inicie el conteo.
+      </pre>
+      <h3>IMG: </h3>
+      <img src="http://www.utn.edu.ec/reduca/programacion/estructuras/Contadores.png" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/1Roajj6yfMs' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'Sumadores'">
       <h1>Informacion: </h1>
+      <pre>
+        Es una variable que está en ambos miembros de una asignación interna a la que se le suma un valor variable.Es una variable que como su nombre lo indica, suma sobre sí misma un conjunto de valores, al finalizar
+con el ciclo contendrá, en una sola variable, la sumatoria de todos los valores, que cumplen una determinada condición. Es necesario haber inicializado en un momento previo a esta variable, ya que va a ser leído su contenido.
+ El sumador acumulara en operaiones sencillas o complejas segun lo desees, dentro del algoritmo.
+      </pre>
+      <h3>IMG: </h3>
+      <img src="http://2.bp.blogspot.com/-dCwAqf6SQz8/VFmbnEOu55I/AAAAAAAAAJQ/fOseoZXYWb4/s1600/1.bmp" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/HiCbt2EIBqU' frameborder="0" allowfullscreen></iframe>
     </div>
     <div *ngIf="actualView == 'ALU'">
       <h1>Informacion: </h1>
+      <pre>En computación, la unidad aritmética lógica o unidad aritmético-lógica, también conocida como ALU (siglas en inglés de arithmetic logic unit), es un circuito digital que calcula operaciones aritméticas (como suma, resta, multiplicación, etc.) y operaciones lógicas (si, y, o, no), entre valores (generalmente uno o dos) de los argumentos.
+
+Por mucho, los circuitos electrónicos más complejos son los que están construidos dentro de los chips de microprocesadores modernos. Por lo tanto, estos procesadores tienen dentro de ellos un ALU muy complejo y potente. De hecho, un microprocesador moderno (y los mainframes) puede tener múltiples núcleos, cada núcleo con múltiples unidades de ejecución, cada una de ellas con múltiples ALU.
+
+Muchos otros circuitos pueden contener en el interior una unidad aritmético lógica: unidades de procesamiento gráfico como las que están en las GPU modernas, FPU como el viejo coprocesador matemático 80387, y procesadores digitales de señales como los que se encuentran en tarjetas de sonido, lectoras de CD y los televisores de alta definición. Todos éstos tienen en su interior varias ALU potentes y complejas.</pre>
+      <h3>IMG: </h3>
+      <img src="http://ati.ttu.ee/IAY0340/labs/Tutorials/SystemC/ALU/ALU.png" alt="">
       <h3>Videos de youtube</h3>
       <iframe width="560" height="315" src='https://www.youtube.com/embed/YygPpWjNWts' frameborder="0" allowfullscreen></iframe>
     </div>

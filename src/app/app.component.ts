@@ -9,10 +9,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 export class AppComponent {
   title = "project";
   actualView: String = "home";
-  safeUrl: String;
-  vieoURL: 'https://www.youtube.com/watch?v=1EiSitCwny8'
 
-  constructor(private _sanitizer: DomSanitizer) {
-    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/watch?v=1EiSitCwny8');
+  constructor() {
   }
 }
